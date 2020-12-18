@@ -1,0 +1,172 @@
+body {
+    font-family: 'Baloo 2', Arial, Helvetica, sans-serif !important;
+    margin: 0px!important;
+    background-color: #1d1d1d ;
+    cursor: default !important;
+    color: #0051a2!important;
+}
+#logo{
+    height: 200px;
+    width: 150px;
+}
+
+#legal {
+    color: #E6E1E1;
+    padding-top: 30px;
+}
+
+#cc {
+    color: white;
+    background-color: #0051a2;
+}
+.wname {
+    text-transform: uppercase;
+    color: #0051a2;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 70px;
+    border-bottom: 5px solid #44138C;}
+    
+.link {
+    padding-bottom: 20px;
+}
+.navbar-nav {
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
+.nav-link {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav-link a {
+    text-align: center;
+    color: #44138C;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    font-weight: bold;
+    color: #44138C;
+    transition: color 0.5s;
+}
+
+.portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper{
+    position: relative;
+}
+
+.img-dash-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.logo-wrapper img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.img-dash-text-wrapper .subtitle{
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-dash-text-wrapper:hover .subtitle{
+    font-weight: 600;
+    color: white;
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+@media only screen and (min-width:0px) and (max-width:990px) {
+ 
+    .portfolio-items-wrapper{
+        visibility: hidden;
+    }
+    .mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .col-sm-3{
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .subtitle{
+        font-weight: 600;
+        color: white;
+    }
+}
+
+
+@media only screen and (min-width:991px){
+
+    .portfolio-items-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .portfolio-item-wrapper{
+        position: relative;
+    }
+    
+    .img-dash-text-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .logo-wrapper img{
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    
+    .img-dash-text-wrapper .subtitle{
+        transition: 1s;
+        font-weight: 600;
+        color: transparent;
+    }
+    
+    .img-dash-text-wrapper:hover .subtitle{
+        font-weight: 600;
+        color: white;
+    }
+    
+    .img-darken{
+        transition: 1s;
+        filter: brightness(10%);
+    }
+    .mobile{
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    #legal{
+        padding-top: 230px;
+    }
+}
